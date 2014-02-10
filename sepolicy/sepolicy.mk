@@ -13,3 +13,4 @@ BOARD_SEPOLICY_UNION += \
    genfs_contexts \
    installd.te \
    vold.te
+

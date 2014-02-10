@@ -4,7 +4,6 @@ PRODUCT_BRAND ?= Anime
 #PRODUCT_COPY_FILES += \
 #	vendor/Anime/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
-
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google
@@ -42,7 +41,7 @@ PRODUCT_COPY_FILES += \
     vendor/Anime/prebuilt/app/Superuser.apk:system/app/Superuser.apk \
     vendor/Anime/prebuilt/etc/install-recovery.sh:system/etc/install-recovery.sh \
     vendor/Anime/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/99SuperSUDaemon \
-    vendor/Anime/prebuilt/xbin/su:system/xbin/su 
+    vendor/Anime/prebuilt/bin/su:system/xbin/su 
 
 
 # init.d support
@@ -60,7 +59,7 @@ PRODUCT_COPY_FILES += \
 
 # Enable SIP and VoIP on all targets
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Additional packages
 -include vendor/Anime/config/packages.mk

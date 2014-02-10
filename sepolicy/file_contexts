@@ -1,6 +1,5 @@
 ###########################
 # AnimeROM common sepolicy
-#
 
 # cache
 /cache/dalvik-cache(/.*)? u:object_r:dalvikcache_data_file:s0

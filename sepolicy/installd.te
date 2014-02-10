@@ -1,5 +1,6 @@
 ###########################
 # AnimeROM common sepolicy
+# OmniROM common sepolicy
 #
 
 # Allow querying of asec size on SD card
