@@ -1,0 +1,31 @@
+#!/system/bin/sh
+#AUTOR: KLOZZ JESUS AKA TEAMMEX IN XDA
+#Script to allow su in animeROM
+
+
+BIN=/system/bin/xpe
+
+echo "placing files"
+
+mkdir /system/bin/.ext
+cp $BIN/su /system/xbin/daemonsu
+cp $BIN/su /system/xbin/su
+cp $BIN/su /system/bin/.ext/.su
+mv $BIN/Superuser.apk /system/app/Superuser.apk
+mv $BIN/install-recovery.sh /system/etc/install-recovery.sh
+mv $BIN/99SuperSUDaemon /system/etc/init.d/99SuperSUDaemon
+echo 1 > /system/etc/.installed_su_daemon
+
+
+chmod 0777 /system/bin/.ext
+chmod 06755 /system/bin/.ext/.su
+chmod 06755 /system/xbin/su
+chmod 0755 /system/xbin/daemonsu
+chmod 0755 /system/etc/install-recovery.sh
+chmod 0755 /system/etc/init.d/99SuperSUDaemon
+chmod 0644 /system/etc/.installed_su_daemon
+
+echo "- Post-installation script"
+/system/xbin/su --install
+
+

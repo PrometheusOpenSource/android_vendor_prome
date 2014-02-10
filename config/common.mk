@@ -36,17 +36,18 @@ PRODUCT_COPY_FILES += \
 
 #superSU
 PRODUCT_COPY_FILES += \
-    vendor/Anime/prebuilt/bin/chattr:system/bin/chattr \
-    vendor/Anime/prebuilt/bin/su:system/bin/su \
-    vendor/Anime/prebuilt/app/Superuser.apk:system/app/Superuser.apk \
-    vendor/Anime/prebuilt/etc/install-recovery.sh:system/etc/install-recovery.sh \
-    vendor/Anime/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/99SuperSUDaemon \
-    vendor/Anime/prebuilt/bin/su:system/xbin/su 
+    vendor/Anime/prebuilt/bin/chattr:system/bin/xpe/chattr \
+    vendor/Anime/prebuilt/bin/su:system/bin/xpe/su \
+    vendor/Anime/prebuilt/app/Superuser.apk:system/bin/xpe/Superuser.apk \
+    vendor/Anime/prebuilt/etc/install-recovery.sh:system/bin/xpe/install-recovery.sh \
+    vendor/Anime/prebuilt/etc/init.d/99SuperSUDaemon:system/bin/xpe/99SuperSUDaemon \
+    vendor/Anime/prebuilt/bin/su:system/bin/xpe/su 
 
 
 # init.d support
 PRODUCT_COPY_FILES += \
 	vendor/Anime/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
+	vendor/Anime/prebuilt/etc/init.d/klozz:system/etc/init.d/klozz \
 	vendor/Anime/prebuilt/bin/sysinit:system/bin/sysinit
 
 # userinit support
