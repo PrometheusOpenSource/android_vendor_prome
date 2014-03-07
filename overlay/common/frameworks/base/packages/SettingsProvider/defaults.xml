@@ -21,5 +21,6 @@
 
     <!-- Circle -->
     <integer name="pref_battery_indicator_values">2</integer>
-
+    <integer name="pref_battery_indicator">2</integer>
+    <integer name="pref_battery_indicator_entries">2</integer>
 </resources>
